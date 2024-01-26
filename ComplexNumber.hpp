@@ -19,6 +19,4 @@ public:
 	ComplexNumber negate();				//Negation
 	ComplexNumber mag();				//Magnitude
 	ComplexNumber con();				//Conjugation
-	ComplexNumber real();				//Real Part
-	ComplexNumber imagine();			//Imaginary Part
 };

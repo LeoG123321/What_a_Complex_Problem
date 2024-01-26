@@ -26,27 +26,23 @@ ComplexNumber ComplexNumber::sub(ComplexNumber sec) {
 	return ComplexNumber(realNum - sec.getRealNum(), imagineNum - sec.getImagineNum());
 }
 
-/*
-ComplexNumber ComplexNumber::mult(ComplexNumber, ComplexNumber) {
-
-}
-ComplexNumber ComplexNumber::div(ComplexNumber, ComplexNumber) {
-
+ComplexNumber ComplexNumber::mult(ComplexNumber sec) {
+	return ComplexNumber(realNum * sec.getRealNum() - imagineNum * sec.getImagineNum(), realNum * sec.getImagineNum() + imagineNum * sec.getRealNum());
 }
 
-ComplexNumber ComplexNumber::negate(ComplexNumber) {
 
+ComplexNumber ComplexNumber::div(ComplexNumber sec) {
+	return ComplexNumber();
 }
-ComplexNumber ComplexNumber::mag(ComplexNumber) {
 
+ComplexNumber ComplexNumber::negate() {
+	return ComplexNumber();
 }
-ComplexNumber ComplexNumber::con(ComplexNumber) {
+ComplexNumber ComplexNumber::mag() {
+	return ComplexNumber();
+}
+ComplexNumber ComplexNumber::con() {
+	return ComplexNumber();
+}
 
-}
-ComplexNumber ComplexNumber::real(ComplexNumber) {
 
-}
-ComplexNumber ComplexNumber::imagine(ComplexNumber) {
-
-}
-*/
