@@ -1,6 +1,3 @@
-#include <iostream>
-using namespace std;
-
 class ComplexNumber 
 {
 private:
@@ -9,9 +6,10 @@ private:
 
 public:
 	ComplexNumber(float, float);
+	ComplexNumber();
 
-	float getRealNum(ComplexNumber);
-	float getImagineNum(ComplexNumber);
+	float getRealNum();
+	float getImagineNum();
 
 	ComplexNumber add(ComplexNumber, ComplexNumber);	//Addition
 	ComplexNumber sub(ComplexNumber, ComplexNumber);	//Subtract
@@ -22,5 +20,5 @@ public:
 	ComplexNumber mag(ComplexNumber);					//Magnitude
 	ComplexNumber con(ComplexNumber);					//Conjugation
 	ComplexNumber real(ComplexNumber);					//Real Part
-	ComplexNumber imagine(ComplexNumber);				//Imaginary Part
+	ComplexNumber imagine();				//Imaginary Part
 };

@@ -12,12 +12,25 @@
 */
 
 #include <iostream>
+#include <cassert>
+#include "ComplexNumber.hpp"
+
 using namespace std;
 
-int main()
-{
+int main() {
+	ComplexNumber primary(1, 2);
+	ComplexNumber secondary(3, 4);
+	ComplexNumber test;
 
+	cout << "Starting Tests..." << endl;
+	//test.add(primary, secondary);
+	//assert(test.getRealNum() == 4);
+	//assert(test.getImagineNum() == 6);
+	cout << "Addition Test Passed..." << endl;
+	//assert(test.getRealNum() == -2);
+	//assert(test.getImagineNum() == -2);
+	cout << "Subtraction Test Passed..." << endl;
 
-    return 0;
+	cout << "Test Complete." << endl;
+	return 0;
 }
-

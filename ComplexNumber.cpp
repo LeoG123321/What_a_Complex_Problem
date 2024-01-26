@@ -1,27 +1,32 @@
-#include <iostream>
 #include "ComplexNumber.hpp"
-
-using namespace std;
 
 ComplexNumber::ComplexNumber(float realNum, float imagineNum) {
 	this->realNum = realNum;
 	this->imagineNum = imagineNum;
 }
 
-float ComplexNumber::getRealNum(ComplexNumber) {
+ComplexNumber::ComplexNumber() {
+	realNum = 0;
+	imagineNum = 0;
+}
+
+
+float ComplexNumber::getRealNum() {
 	return realNum;
 }
-float ComplexNumber::getImagineNum(ComplexNumber) {
+float ComplexNumber::getImagineNum() {
 	return imagineNum;
 }
 
 ComplexNumber add(ComplexNumber pri, ComplexNumber sec) {	//pri == Primary		sec == Secondary
-	
+	return ComplexNumber(pri.getRealNum() + sec.getRealNum(), pri.getImagineNum() + sec.getRealNum());
 }
 
-ComplexNumber ComplexNumber::sub(ComplexNumber, ComplexNumber) {
-
+ComplexNumber ComplexNumber::sub(ComplexNumber pri, ComplexNumber sec) {
+	return ComplexNumber(pri.getRealNum() - sec.getRealNum(), pri.getImagineNum() - sec.getRealNum());
 }
+
+/*
 ComplexNumber ComplexNumber::mult(ComplexNumber, ComplexNumber) {
 
 }
@@ -44,3 +49,4 @@ ComplexNumber ComplexNumber::real(ComplexNumber) {
 ComplexNumber ComplexNumber::imagine(ComplexNumber) {
 
 }
+*/
