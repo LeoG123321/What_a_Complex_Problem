@@ -23,12 +23,13 @@ int main() {
 	ComplexNumber test;
 
 	cout << "Starting Tests..." << endl;
-	//test.add(primary, secondary);
-	//assert(test.getRealNum() == 4);
-	//assert(test.getImagineNum() == 6);
+	test = primary.add(secondary);
+	assert(test.getRealNum() == 4);
+	assert(test.getImagineNum() == 6);
 	cout << "Addition Test Passed..." << endl;
-	//assert(test.getRealNum() == -2);
-	//assert(test.getImagineNum() == -2);
+	test = primary.sub(secondary);
+	assert(test.getRealNum() == -2);
+	assert(test.getImagineNum() == -2);
 	cout << "Subtraction Test Passed..." << endl;
 
 	cout << "Test Complete." << endl;

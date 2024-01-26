@@ -18,12 +18,12 @@ float ComplexNumber::getImagineNum() {
 	return imagineNum;
 }
 
-ComplexNumber add(ComplexNumber pri, ComplexNumber sec) {	//pri == Primary		sec == Secondary
-	return ComplexNumber(pri.getRealNum() + sec.getRealNum(), pri.getImagineNum() + sec.getRealNum());
+ComplexNumber ComplexNumber::add(ComplexNumber sec) {	//pri == Primary		sec == Secondary
+	return ComplexNumber(realNum + sec.getRealNum(), imagineNum + sec.getImagineNum());
 }
 
-ComplexNumber ComplexNumber::sub(ComplexNumber pri, ComplexNumber sec) {
-	return ComplexNumber(pri.getRealNum() - sec.getRealNum(), pri.getImagineNum() - sec.getRealNum());
+ComplexNumber ComplexNumber::sub(ComplexNumber sec) {
+	return ComplexNumber(realNum - sec.getRealNum(), imagineNum - sec.getImagineNum());
 }
 
 /*
