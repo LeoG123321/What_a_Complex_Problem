@@ -4,11 +4,14 @@ using namespace std;
 class ComplexNumber 
 {
 private:
-	float realNumber;
-	float imagineNumber;		//Imaginary Number
+	float realNum;			//Real Number
+	float imagineNum;		//Imaginary Number
 
 public:
 	ComplexNumber(float, float);
+
+	float getRealNum(ComplexNumber);
+	float getImagineNum(ComplexNumber);
 
 	ComplexNumber add(ComplexNumber, ComplexNumber);	//Addition
 	ComplexNumber sub(ComplexNumber, ComplexNumber);	//Subtract
